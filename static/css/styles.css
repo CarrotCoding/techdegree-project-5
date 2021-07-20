@@ -5,7 +5,7 @@ Colors
     --primary-text: #51475c;
     --secondary-text: #ab6c82;
     --primary: #475c7a;
-    --secondary: #fcbb6d;
+    --secondary: #E6F0EA;
     --accent: #d8737f;
     --white:  #fff;
 }
@@ -19,8 +19,8 @@ FONT
     color: var(--primary-text);
 }
 
-p, 
-li, 
+p,
+li,
 a {
     font-size: 20px;
 }
@@ -80,6 +80,10 @@ nav {
 .dropdown-menu li a:focus {
     background-color: var(--accent);
     color: var(--white);
+}
+
+.nav-link:link{
+  text-decoration: none;
 }
 
 /******************
@@ -175,7 +179,7 @@ About
     left: 5px;
 }
 
-#about  h2, 
+#about  h2,
 #about p {
     color: var(--white);
     margin: auto;
