@@ -39,7 +39,7 @@ def clean_date(date_str):
     return datetime.date(year, month, 1)
 
 
-@app.route('/projects/<id>/edit')
+@app.route('/projects/<id>/edit', methods=['GET', 'POST'])
 def edit_project(id):
     projects = Project.query.all()
     project = Project.query.get_or_404(id)
@@ -61,7 +61,7 @@ def delete_project(id):
     project = Project.query.get_or_404(id)
     db.session.delete(project)
     db.session.commit()
-    return redirect(url_for('index'), project=project, projects=projects)
+    return redirect(url_for('index'))
 
 
 @app.route('/about')
