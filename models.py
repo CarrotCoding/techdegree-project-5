@@ -16,6 +16,7 @@ class Project(db.Model):
     skills = db.Column('Skills', db.Text)
     url = db.Column('GitHub Repo Link', db.Text)
 
+
 def __repr__(self):
     return f'''
             Title: {self.title}
